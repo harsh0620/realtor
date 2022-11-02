@@ -44,8 +44,8 @@ const SignUp = () => {
       formDataCopy.timestamp = serverTimestamp();
 
       await setDoc(doc(db, "users", user.uid), formDataCopy);
-      // toast.success("Sign Up was successful");
-      // navigate("/");
+      toast.success("Sign Up was successful");
+      navigate("/");
     } catch (error) {
       toast.error("Something Went Wrong");
     }
