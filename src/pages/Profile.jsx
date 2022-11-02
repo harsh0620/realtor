@@ -31,9 +31,7 @@ const Profile = () => {
         await updateProfile(auth.currentUser, {
           displayName: name,
         });
-
         // update name in the firestore
-
         const docRef = doc(db, "users", auth.currentUser.uid);
         await updateDoc(docRef, {
           name,
