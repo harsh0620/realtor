@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 const CreateListing = () => {
   const auth = getAuth();
   const navigate = useNavigate();
-  const [geolocationEnabled, setGeolocationEnabled] = useState(false);
+  const [geolocationEnabled] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     type: "rent",
@@ -123,6 +123,8 @@ const CreateListing = () => {
                 break;
               case "running":
                 console.log("Upload is running");
+                break;
+              default:
                 break;
             }
           },
