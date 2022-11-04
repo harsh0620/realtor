@@ -306,8 +306,7 @@ const CreateListing = () => {
                 value={latitude}
                 onChange={onChange}
                 required
-                min="-90"
-                max="90"
+                step="0.0000"
                 className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:bg-white focus:text-gray-700 focus:border-slate-600 text-center"
               />
             </div>
@@ -319,8 +318,7 @@ const CreateListing = () => {
                 value={longitude}
                 onChange={onChange}
                 required
-                min="-180"
-                max="180"
+                step="0.0000"
                 className="w-full px-4 py-2 text-xl text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:bg-white focus:text-gray-700 focus:border-slate-600 text-center"
               />
             </div>
