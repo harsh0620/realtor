@@ -152,7 +152,7 @@ export default function Listing() {
         <div className="w-full h-[200px] md:h-[400px] z-10 overflow-y-hidden overflow-x-hidden mt-6 md:mt-0 md:ml-2">
           <MapContainer
             center={[listing.latitude, listing.longitude]}
-            zoom={13}
+            zoom={20}
             scrollWheelZoom={false}
             style={{ height: "100%", width: "100%" }}
           >
